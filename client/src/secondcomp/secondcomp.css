@@ -1,0 +1,122 @@
+.second-comp{
+	padding: 5em 0;
+	font-family: 'Poppins', sans-serif;
+	/* background-color:#DDD0C8; */
+	/* background: linear-gradient(
+    to right,
+    #DDD0C8 0%,
+    #DDD0C8 50%,
+    white 50%,
+    white 100%
+  ); */
+}
+
+.info{
+	padding: 0 10rem;
+}
+
+.my-component {
+	width: 400px;
+	padding: 0 auto;
+  }
+  
+  .centered-heading {
+	text-align: center;
+  }
+  
+  .box-container {
+	display: flex;
+	justify-content: space-between;
+	/* margin-top: 20px; */
+	padding: 2.5em;
+    gap: 40px;
+  } 
+  
+  .box {
+	position: relative;
+	width: 48%;
+    height: 20rem;
+    padding: 20px;
+	overflow: hidden;
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    box-shadow: 0 0 5px rgb(0 0 0 / 30%);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .box:hover {
+	box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  }
+  
+  .Img{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	opacity: 0.9;
+	filter: brightness(50%)
+  }
+
+  h3{
+    z-index: 3;
+    position: static;
+	transform: translateY(0);
+	transition: transform 0.5s;
+    text-shadow: 1px 1px #000000;
+	position: absolute;
+	bottom: 20px; /* set to bottom of the box */
+	left: 20px;
+	color: #fff;
+	font-size: 2rem;
+	font-weight: bold;
+	text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.5);
+	/* transition: position 4s ease-in-out; */
+  }
+
+  .box p{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 20px;
+	z-index: 3;
+	/* padding: 0; */
+	opacity: 0;
+	transform: translateY(100%);
+	color: white;
+	transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+  }
+
+  .box:hover h3 {
+	transform: translateY(2vw);
+	/* transform: translateY(-100%); */
+	text-decoration-line: underline;
+	z-index: 0;
+  }
+  
+  .box:hover p {
+	opacity: 1; 
+	transform: translateY(0);
+  }
+
+  .box:hover img{
+	filter: brightness(30%),
+  }
+
+
+  @media screen and (max-width:1200px) {
+	.box-container{
+		flex-direction: column;
+	}
+
+	.box{
+		width: 100%;
+		height: 20vh;
+	}
+
+	.info{
+		padding: 0 2.5em;
+		text-align: justify;
+	}
+  }
