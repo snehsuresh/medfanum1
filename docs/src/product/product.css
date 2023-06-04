@@ -1,0 +1,37 @@
+.product {
+	border: 1px solid #ddd;
+	padding: 20px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+  }
+  
+  .product-image {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+  }
+  
+  .product-info {
+	margin-top: auto;
+  }
+  
+  .product-name {
+	font-weight: bold;
+	margin-bottom: 5px;
+  }
+  
+  .product-desc {
+	margin-bottom: 10px;
+  }
+  
+  .product-list {
+	display: grid;
+	grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+	gap: 20px;
+  }
+  
+  /* Add more styles as needed for the product component and products page */
+  

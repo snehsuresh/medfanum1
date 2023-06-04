@@ -1,0 +1,75 @@
+.Welcome {
+  position: relative;
+  height: 100vh;
+}
+
+.WelcomeTitles {
+  position: absolute;
+  top: 32%;
+  left: 3%;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  width: 52%;
+}
+
+.WelcomeImg {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.WelcomeTitleLg{
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 5vw; /* use vw units for font size */
+  font-weight: 700;
+  line-height: 1.1em;
+  background: rgba(0,0,0, 0.1);
+}
+
+.WelcomeTitleSm{
+  color: white;
+  font-weight: 400;
+  background: rgba(0,0,0, 0.1);
+  margin-top: 2vw; /* use vw units for margin */
+  margin-left: 1vw;
+}
+
+/* Media queries for smaller screens */
+@media screen and (max-width: 768px) {
+  .WelcomeTitles {
+    top: 25%;
+    left: 2%;
+    width: 80%;
+  }
+
+  .WelcomeTitleLg {
+    font-size: 8vw;
+  }
+
+  .WelcomeTitleSm {
+    margin-top: 4vw;
+    margin-left: 2vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .WelcomeTitles {
+    top: 15%;
+    left: 2%;
+    width: 90%;
+  }
+
+  .WelcomeTitleLg {
+    font-size: 12vw;
+  }
+
+  .WelcomeTitleSm {
+    margin-top: 6vw;
+    margin-left: 2vw;
+  }
+}
