@@ -42,7 +42,7 @@ import './products.css';
 
 const Products = () => {
 	const [products, setProducts] = useState([]);
-
+	console.log(products);
 	const productsList = [
 		{ name: 'PANCARD', desc: 'Pantoprazole 40mg EC Tablet', image: 'https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=4679&t=l' },
 		{ name: 'PANDCARD D', desc: 'Pantoprazole 40mg EC + Domperidone 30mg SR Capsule', image: 'https://pubchem.ncbi.nlm.nih.gov/image/imgsrv.fcgi?cid=3151&t=l' },
