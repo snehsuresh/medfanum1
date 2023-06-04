@@ -59,7 +59,7 @@
 	filter: brightness(50%)
   }
 
-  h3{
+  h3.secondCompTitle{
     z-index: 3;
     position: static;
 	transform: translateY(0);

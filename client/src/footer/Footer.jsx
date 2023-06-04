@@ -1,6 +1,6 @@
 import React from 'react';
 import { MDBFooter, MDBContainer, MDBRow, MDBCol, MDBIcon } from 'mdb-react-ui-kit';
-
+import Logo from './transparent-png.png'
 export default function Footer() {
 	return (
 		<MDBFooter bgColor='light' className='text-center text-lg-start text-muted'>
@@ -35,35 +35,35 @@ export default function Footer() {
 				<MDBContainer className='text-center text-md-start mt-5'>
 					<MDBRow className='mt-3'>
 						<MDBCol md="3" lg="4" xl="3" className='mx-auto mb-4'>
-							<h6 className='text-uppercase fw-bold mb-4'>
-								<MDBIcon icon="gem" className="me-3" />
-								Medfanum
+							<h6 className='text-uppercase fw-bold mb-4' style={{ marginBottom: "0" }}>
+								{/* <MDBIcon icon="gem" className="me-3" /> */}
+								<img className='logo' src={Logo} style={{ height: "135px", position: "relative", top: "-40px", left: "0" }} />
 							</h6>
 							<p>
-								Short desctiption about the company. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Fuga molestias non aut magni eligendi eum, labore laborum amet unde officiis.
+								Upholding the sanctity in patient care since 2001
 							</p>
 						</MDBCol>
 
 						<MDBCol md="2" lg="2" xl="2" className='mx-auto mb-4'>
-							<h6 className='text-uppercase fw-bold mb-4'>Products</h6>
+							<h6 className='text-uppercase fw-bold mb-4'>Latest Products</h6>
 							<p>
 								<a href='#!' className='text-reset'>
-									Product 1
+									Pancard
 								</a>
 							</p>
 							<p>
 								<a href='#!' className='text-reset'>
-									Product 2
+									Sterofan 6
 								</a>
 							</p>
 							<p>
 								<a href='#!' className='text-reset'>
-									Product 3
+									Nila Plus
 								</a>
 							</p>
 							<p>
 								<a href='#!' className='text-reset'>
-									Product 4
+									Etofan
 								</a>
 							</p>
 						</MDBCol>
@@ -96,11 +96,11 @@ export default function Footer() {
 							<h6 className='text-uppercase fw-bold mb-4'>Contact</h6>
 							<p>
 								<MDBIcon icon="home" className="me-2" />
-								Alappuzha, KL 688001, IN
+								N-Mumbai, MH, 410209, IN
 							</p>
 							<p>
 								<MDBIcon icon="envelope" className="me-3" />
-								info@medfanum.com
+								info@medfanum.co.in
 							</p>
 							<p>
 								<MDBIcon icon="phone" className="me-3" /> +91 8848897306

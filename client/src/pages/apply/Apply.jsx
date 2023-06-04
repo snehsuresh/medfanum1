@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import './apply.css'
-import nodemailer from 'nodemailer';
+// import nodemailer from 'nodemailer';
 
 
 function ApplyPage() {
@@ -11,43 +11,43 @@ function ApplyPage() {
 	function handleSubmit(e) {
 		e.preventDefault();
 
-		const formData = new FormData(e.target);
+		// const formData = new FormData(e.target);
 
-		const name = formData.get('name');
-		const email = formData.get('email');
-		const resume = formData.get('resume');
+		// const name = formData.get('name');
+		// const email = formData.get('email');
+		// const resume = formData.get('resume');
 
-		const transporter = nodemailer.createTransport({
-			service: 'gmail',
-			auth: {
-				user: 'avinashbhattacharya92@gmail.com',
-				pass: 'Precise@14',
-			},
-		});
+		// const transporter = nodemailer.createTransport({
+		// 	service: 'gmail',
+		// 	auth: {
+		// 		user: 'avinashbhattacharya92@gmail.com',
+		// 		pass: 'Precise@14',
+		// 	},
+		// });
 
-		const mailOptions = {
-			from: 'your.email@gmail.com',
-			to: 'recipient.email@gmail.com',
-			subject: 'New Job Application',
-			text: `Name: ${name}\nEmail: ${email}`,
-			attachments: [
-				{
-					filename: resume.name,
-					content: resume.data,
-				},
-			],
-		};
+		// const mailOptions = {
+		// 	from: 'your.email@gmail.com',
+		// 	to: 'recipient.email@gmail.com',
+		// 	subject: 'New Job Application',
+		// 	text: `Name: ${name}\nEmail: ${email}`,
+		// 	attachments: [
+		// 		{
+		// 			filename: resume.name,
+		// 			content: resume.data,
+		// 		},
+		// 	],
+		// };
 
-		transporter.sendMail(mailOptions, function (error, info) {
-			if (error) {
-				console.error(error);
-			} else {
-				console.log('Email sent: ' + info.response);
-			}
-		});
+		// transporter.sendMail(mailOptions, function (error, info) {
+		// 	if (error) {
+		// 		console.error(error);
+		// 	} else {
+		// 		console.log('Email sent: ' + info.response);
+		// 	}
+		// });
 
-		// clear form after submission
-		e.target.reset();
+		// // clear form after submission
+		// e.target.reset();
 	}
 
 	return (

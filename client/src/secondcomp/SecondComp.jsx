@@ -1,9 +1,5 @@
 import React from 'react'
 import './secondcomp.css'
-import availabilityImg from './availability.jpg'
-import qualityImg from './quality.jpg'
-import reliabilityImg from './reliablity.jpg'
-import affordabilityImg from './affordability.jpg'
 
 function SecondComp() {
 	return (
@@ -12,24 +8,24 @@ function SecondComp() {
 			<div className="info">We at Medfanum are dedicated to providing the highest quality medical care products, in pursuit of our goal to improve healthcare across our nation. Our team of experts collaborates closely to drive progress towards realizing this vision.</div>
 			<div className="box-container">
 				<div className="box">
-					<h3>Reliability</h3>
-					<p>Our team of experienced professionals work tirelessly to ensure that our products are manufactured to the highest standards of quality and safety.</p>
-					<img src={reliabilityImg} alt="" className="Img" />
+					<h3 className='secondCompTitle'>Reliability</h3>
+					<p>Healthcare professionals and patients trust us for our consistent delivery of safe and effective medicines, earning us a reputation for reliability.	</p>
+					<img src='https://images.unsplash.com/photo-1630426334879-1889eb7ed48f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1332&q=80' alt="" className="Img" />
 				</div>
 				<div className="box">
-					<h3>Affordability</h3>
-					<p>We believe that everyone deserves access to safe and effective medications, and we are committed to providing affordable healthcare solutions to our customers.</p>
-					<img src={affordabilityImg} alt="" className="Img" />
+					<h3 className='secondCompTitle'>Affordability</h3>
+					<p>We strive to make high-quality medicines affordable and accessible, ensuring that cost is not a barrier to quality healthcare</p>
+					<img src='https://images.unsplash.com/photo-1598688933220-6edce518e35a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=389&q=80' alt="" className="Img" />
 				</div>
 				<div className="box">
-					<h3>Quality</h3>
-					<p>We adhere to strict quality control standards at every stage of the process, ensuring that the products are always of the highest quality.</p>
-					<img src={qualityImg} alt="" className="Img" />
+					<h3 className='secondCompTitle'>Quality</h3>
+					<p>Our commitment to excellence drives us to maintain the highest standards of quality in every aspect of our pharmaceutical formulations</p>
+					<img src='https://images.unsplash.com/photo-1630959305606-3123a081dada?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=387&q=80' alt="" className="Img" />
 				</div>
 				<div className="box">
-					<h3>Availability</h3>
-					<p>We allows you to order our products from the comfort of your own home, with fast and reliable shipping options available.</p>
-					<img src={availabilityImg} alt="" className="Img" />
+					<h3 className='secondCompTitle'>Availability</h3>
+					<p>We ensure our medicines are readily available to meet the healthcare needs of patients across the globe</p>
+					<img src='https://images.unsplash.com/photo-1573854612793-9a3e6ebc61fc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=874&q=80' alt="" className="Img" />
 				</div>
 			</div>
 		</div>
